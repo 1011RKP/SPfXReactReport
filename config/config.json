@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "incyte-vehicle-reports-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/incyteVehicleReports/IncyteVehicleReportsWebPart.js",
+          "manifest": "./src/webparts/incyteVehicleReports/IncyteVehicleReportsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "IncyteVehicleReportsWebPartStrings": "lib/webparts/incyteVehicleReports/loc/{locale}.js"
+  }
+}

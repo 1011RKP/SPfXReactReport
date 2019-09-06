@@ -1,0 +1,123 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.all {
+    .container {        
+        margin: 0px auto;
+      }
+      .exportRow{
+        margin: auto;
+        text-align: center;
+        padding: 5px;
+      }
+      
+      .msTable{
+        font-family: Segoe UI WestEuropean, Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        display: table;
+        width: 100%!important;
+        border-collapse: collapse;
+        color: white!important;
+      }
+      
+      .msTable--fixed {
+        table-layout: fixed;
+      }
+      
+      .msTable tr,
+      .msTable-row {
+        display: table-row;
+        line-height: 30px;
+        font-weight: 300;
+        font-size: 12px;
+        color: white
+      }
+      
+      .msTable tr.is-selected,
+      .msTable-row.is-selected {
+        background-color: #b3d6f2
+      }
+      
+      .msTable tr.is-selected .msTable-rowCheck,
+      .msTable-row.is-selected .msTable-rowCheck {
+        background-color: #0078d7
+      }
+      
+      .msTable tr.is-selected .msTable-rowCheck:before,
+      .msTable-row.is-selected .msTable-rowCheck:before {
+        display: none
+      }
+      
+      .msTable tr.is-selected .msTable-rowCheck:after,
+      .msTable-row.is-selected .msTable-rowCheck:after {
+        content: "\E73A";
+        color: #fff
+      }
+      
+      .msTable td,
+      .msTable th,
+      .msTable-cell {
+        display: table-cell;
+        padding: 0 10px
+      }
+      
+      .msTable thead th,
+      .msTable-head {
+        font-weight: 300;
+        font-size: 11px;
+        color: white
+      }
+      
+      .msTable thead .msTable-cell,
+      .msTable thead .msTable-rowCheck,
+      .msTable thead td,
+      .msTable thead th,
+      .msTable-head .msTable-cell,
+      .msTable-head .msTable-rowCheck,
+      .msTable-head td,
+      .msTable-head th {
+        font-weight: 400;
+        text-align: left;
+        border-bottom: 1px solid #eaeaea
+      }
+      
+      .msTable-rowCheck {
+        display: table-cell;
+        width: 20px;
+        position: relative;
+        padding: 0
+      }
+      
+      .msTable-rowCheck:after {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-family: FabricMDL2Icons;
+        font-style: normal;
+        font-weight: 400;
+        speak: none;
+        content: "\E739";
+        color: #a6a6a6;
+        font-size: 12px;
+        position: absolute;
+        left: 4px;
+        top: 1px
+      }
+      
+      .msTable--selectable .msTable-row:hover,
+      .msTable--selectable tr:hover {
+        background-color: #f4f4f4;
+        cursor: pointer;
+        outline: 1px solid transparent
+      }
+      
+      @media screen and (-ms-high-contrast:active) {
+        .msTable-row.is-selected .msTable-rowCheck {
+          background: 0 0
+        }
+      
+        .msTable-row.is-selected .msTable-rowCheck:before {
+          display: block
+        }
+      }
+      
+}
